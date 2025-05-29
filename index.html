@@ -4,33 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Início</title>
+    <title>Página incial</title>
     <style>
         *{
+
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
+
+        body {
+
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
         .menu {
+
             list-style: none;
-            border: 1px solid #778da9;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
+            align-items: center;
+            background-color: aliceblue;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
             width: 100%;
-        }
-        .menu li {
-            position: relative;
+            z-index: 1000;
 
         }
     </style>
 </head>
 <body>
-    <nav class="menu">
-        <ul>
-            <li>Inicio</li>
-            <li>Sobre</li>
-            <li>Perfil</li>
-            <li>Contatos</li>
-        </ul>
-    </nav>
+    <ul class="menu">
+        <li>Início</li>
+        <li>Sobre</li>
+        <li>Perfil</li>
+        <li>Contatos</li>    
+        <li><a href="./login.html">Conta</a></li>
+    </ul>
 </body>
 </html>
